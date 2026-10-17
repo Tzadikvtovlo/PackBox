@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "PackBox Data Tracker",
+  "version": "1.0",
+  "description": "מעקב חכם אחר נתוני הגלישה מהסטיק ומ-019 מובייל",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage",
+    "alarms",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
